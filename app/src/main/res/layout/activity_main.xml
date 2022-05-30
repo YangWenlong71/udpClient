@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <cn.titansys.udpclient.Radar.RadarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/radar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:circleColor="#565cd6"
+        app:circleNum="6"
+        app:flicker="3"
+        app:speed="5"
+        app:sweepColor="#565cd6"
+        app:showCross="true"
+        app:raindropNum="4"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:text="UDP监听端口"
+        android:layout_width="180dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_port"
+        android:gravity="center"
+        android:text="7171"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_edittext"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:singleLine="true"
+        />
+
+
+
+
+    <CheckBox
+        android:layout_marginTop="10dp"
+        android:button="@null"
+        android:gravity="center"
+        android:background="@drawable/selector_user_record"
+        android:id="@+id/cb_search"
+        android:text="开始搜索"
+        android:textColor="@color/white"
+        android:layout_width="180dp"
+        android:layout_height="40dp"/>
+
+
+
+</LinearLayout>
